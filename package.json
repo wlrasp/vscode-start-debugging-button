@@ -17,7 +17,6 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:localPlayDebug.start"
   ],
   "main": "./extension.js",
   "files": [
@@ -38,7 +37,7 @@
       "editor/title": [
         {
           "command": "localPlayDebug.start",
-          "group": "navigation@1"
+          "group": "navigation@0"
         }
       ]
     }
