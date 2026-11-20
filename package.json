@@ -1,0 +1,46 @@
+
+{
+  "name": "start-debugging-button",
+  "displayName": "Start Debugging Button",
+  "description": "Adds a Start Debugging button to the editor title bar",
+  "version": "1.0.0",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wlrasp/vscode-start-debugging-button.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:localPlayDebug.start"
+  ],
+  "main": "./extension.js",
+  "files": [
+    "extension.js",
+    "package.nls.json",
+    "package.nls.ru.json",
+    "LICENSE"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "localPlayDebug.start",
+        "title": "%command.startDebugging%",
+        "icon": "$(debug-start)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "localPlayDebug.start",
+          "group": "navigation@1"
+        }
+      ]
+    }
+  }
+}
